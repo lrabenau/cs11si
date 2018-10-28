@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{0526A74A-8651-D5DE-EFDF-88D7B06443B8}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/xMaterials/Glass2.shader">
+    <Files>
+      <File FileName="Assets/xMaterials/Glass.compute" Line="15" Column="15" />
+      <File FileName="Assets/xMaterials/Glass2.shader" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
