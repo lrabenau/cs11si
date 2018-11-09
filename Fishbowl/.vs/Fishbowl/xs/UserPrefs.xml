@@ -8,7 +8,9 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <RunToCursorBreakpoint file="/Users/lisarabenau/Desktop/Fall_18/CS 11 SI/cs11si/Fishbowl/Assets/Scripts/MoveTransform.cs" relfile="Assets/Scripts/MoveTransform.cs" line="15" column="5" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

@@ -1,6 +1,6 @@
 ﻿Shader "Custom/Transparent Specular" {
     Properties {
-        _MainTex ("Base (RGB)", 2D) = "green" {}
+        _MainTex ("Base (RGB)", 2D) = "white" {}
          
         // Colour property is used only to set influence of alpha, i.e. transparency
         _Colour ("Transparency (A only)", Color) = (0.5, 0.5, 0.5, 1)
