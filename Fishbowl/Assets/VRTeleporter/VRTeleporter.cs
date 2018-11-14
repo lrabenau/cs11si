@@ -33,6 +33,7 @@ public class VRTeleporter : MonoBehaviour
     private List<Vector3> vertexList = new List<Vector3>(); // vertex on arc
 
     private bool displayActive = false; // don't update path when it's false.
+    private float CAMERA_HEIGHT = 1.7f;
 
 
     // Teleport target transform to ground position
@@ -40,7 +41,11 @@ public class VRTeleporter : MonoBehaviour
     {
         if (groundDetected)
         {
-            bodyTransforn.position = groundPos + lastNormal * 0.1f;
+            Debug.Log(bodyTransforn.position);
+            Debug.Log(groundPos);
+            Debug.Log(lastNormal);
+            bodyTransforn.position = groundPos + lastNormal * (5f / 1.2f);
+            Debug.Log(bodyTransforn.position);
         }
         else
         {
