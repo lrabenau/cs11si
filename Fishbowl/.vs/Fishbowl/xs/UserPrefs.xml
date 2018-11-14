@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{0526A74A-8651-D5DE-EFDF-88D7B06443B8}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/xMaterials/Glass2.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ControllerController.cs">
     <Files>
       <File FileName="Assets/xMaterials/Glass.compute" Line="15" Column="15" />
       <File FileName="Assets/xMaterials/Glass2.shader" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="27" Column="11" />
+      <File FileName="Assets/Scripts/KeyManager.cs" Line="17" Column="11" />
+      <File FileName="Assets/ControllerController.cs" Line="14" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <RunToCursorBreakpoint file="/Users/lisarabenau/Desktop/Fall_18/CS 11 SI/cs11si/Fishbowl/Assets/Scripts/MoveTransform.cs" relfile="Assets/Scripts/MoveTransform.cs" line="15" column="5" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

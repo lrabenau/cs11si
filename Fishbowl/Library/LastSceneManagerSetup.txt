@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Snowtrees.unity
+- path: Assets/Scenes/Snow_birds.unity
   isLoaded: 1
   isActive: 1

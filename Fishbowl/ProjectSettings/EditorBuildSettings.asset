@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Snowtrees.unity
     guid: f7d83b5b4fcd343b589089a81ecd2d70
+  - enabled: 1
+    path: Assets/Scenes/Snow_birds.unity
+    guid: 9a6bc649d42474d34b2bc7a976c8582b
   m_configObjects: {}
