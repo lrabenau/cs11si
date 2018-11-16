@@ -459,7 +459,7 @@ public class lb_Bird : MonoBehaviour {
 	}
 
 	void Flee(){
-		if(!dead){
+		if(!dead && controller != null){
 			StopCoroutine("FlyToTarget");
 			GetComponent<AudioSource>().Stop();
 			anim.Play(flyAnimationHash);

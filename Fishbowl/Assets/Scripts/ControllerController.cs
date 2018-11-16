@@ -18,7 +18,7 @@ public class ControllerController : MonoBehaviour {
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.forward, out hit, 100.0f))
             {
-                if (hit.distance <= 10f)
+                if (hit.distance <= 100f)
                 {
                     if (hit.collider.gameObject.tag == "sceneSwitcher"){ 
                         // if (tag == x)
