@@ -5,11 +5,16 @@ using UnityEngine;
 public class ShootInteractivity : MonoBehaviour {
     public GameObject bulletPrefab;
     public float speed;
-    public Transform spawnPoint; 
+    public Transform spawnPoint;
 
-	// Use this for initialization
-	void Start () {
-		
+    [SerializeField]
+    private AudioClip GunShot;
+
+    private AudioSource audioSource;
+
+    // Use this for initialization
+    void Start () {
+		audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -25,5 +30,6 @@ public class ShootInteractivity : MonoBehaviour {
     {
         GameObject spawnBullet= Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
         spawnBullet.GetComponent<Rigidbody>().AddForce(transform.forward.normalized * speed);
+        audioSource.PlayOneShot(GunShot);
     }
 }
