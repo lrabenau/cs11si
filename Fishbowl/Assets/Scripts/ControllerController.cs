@@ -13,21 +13,20 @@ public class ControllerController : MonoBehaviour {
 	void Update () {
         // #if UNITY_EDITOR
         // #else if bUNITY_ANDROID
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger) || Input.GetKeyDown(KeyCode.Space))
-        {
+        //if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger) || Input.GetKeyDown(KeyCode.Space)) {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 100.0f))
+            if (Physics.Raycast(transform.position, transform.up, out hit, 100.0f))
             {
                 if (hit.distance <= 100f)
                 {
                     if (hit.collider.gameObject.tag == "sceneSwitcher"){ 
                         // if (tag == x)
                         // sceneName=y
-                        GameManager.Instance.LoadScene("Scenes/SampleScene");
+                        GameManager.Instance.LoadScene("Scenes/space");
 
                     }
                 }
             }
-        }
+        //}
 	}
 }
