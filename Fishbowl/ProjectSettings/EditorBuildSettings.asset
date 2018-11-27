@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Snowtrees.unity
     guid: f7d83b5b4fcd343b589089a81ecd2d70
-  - enabled: 1
+  - enabled: 0
     path: Assets/test.unity
     guid: 94c232659f7544cda8a3e496753b7469
+  - enabled: 1
+    path: Assets/Scenes/Snow_birds.unity
+    guid: 9a6bc649d42474d34b2bc7a976c8582b
+  - enabled: 1
+    path: Assets/Scenes/space.unity
+    guid: 326550c7c4fb8184eb37fea405b8349c
   m_configObjects: {}
