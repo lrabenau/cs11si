@@ -11,7 +11,7 @@ public class BulletControl : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        audioSource = GetComponent<AudioSource>();
+        audioSource = transform.parent.GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -19,10 +19,17 @@ public class BulletControl : MonoBehaviour {
 		
 	}
 
-    private void OnCollisionEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        audioSource.PlayOneShot(AsteroidDestruction);
+
         Destroy(other.gameObject);
-        Destroy(this.gameObject);
+        StartCoroutine(PlayExplosion());
+    }
+
+    private IEnumerator PlayExplosion()
+    {
+        audioSource.PlayOneShot(AsteroidDestruction, 1f);
+        yield return new WaitForSeconds(AsteroidDestruction.length);
+        Destroy(transform.parent.gameObject);
     }
 }
