@@ -29,7 +29,7 @@ public class ShootInteractivity : MonoBehaviour {
     public void Shoot()
     {
         GameObject spawnBullet= Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
-        spawnBullet.GetComponent<Rigidbody>().AddForce(transform.forward.normalized * speed);
+        spawnBullet.transform.GetChild(0).GetComponent<Rigidbody>().AddForce(transform.forward.normalized * speed);
         audioSource.PlayOneShot(GunShot);
     }
 }
