@@ -5,12 +5,13 @@ using UnityEngine;
 public class CircularMovement : MonoBehaviour
 {
     public Vector3 Velocity = new Vector3(0, 0, 0);
+    public Vector3 CenterStart = new Vector3(0, 0, 0);
 
-    [Range(0, 5)] 
+    [Range(0, 100)] 
     public float RotateSpeed = 1f;
-    [Range(0, 5)]
+    [Range(0, 100)]
     public float RotateRadiusX = 1f;
-    [Range(0, 5)]
+    [Range(0, 100)]
     public float RotateRadiusZ = 1f;
 
     public bool Clockwise = true;
@@ -20,7 +21,8 @@ public class CircularMovement : MonoBehaviour
 
     private void Start()
     {
-        _centre = transform.position;
+//%  _centre = transform.position;
+        _centre = CenterStart;
     }
 
     private void Update()

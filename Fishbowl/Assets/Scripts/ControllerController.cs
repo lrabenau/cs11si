@@ -19,10 +19,22 @@ public class ControllerController : MonoBehaviour {
             {
                 if (hit.distance <= 100f)
                 {
-                    if (hit.collider.gameObject.tag == "sceneSwitcher"){ 
+                    if (hit.collider.gameObject.tag == "spaceScene"){ 
                         // if (tag == x)
                         // sceneName=y
                         GameManager.Instance.LoadScene("Scenes/space");
+
+                    }
+                    if (hit.collider.gameObject.tag == "birdScene")
+                    {
+
+                        GameManager.Instance.LoadScene("Scenes/Snow_birds");
+
+                    }
+                    if (hit.collider.gameObject.tag == "fishbowlScene")
+                    {
+
+                        GameManager.Instance.LoadScene("Scenes/Fishbowl");
 
                     }
                 }
