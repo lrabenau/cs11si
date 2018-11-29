@@ -53824,7 +53824,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 128002, guid: bb660abd3b29d9f44866fd79795dbca4, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: fishbowlScene
       objectReference: {fileID: 0}
     - target: {fileID: 2305694, guid: bb660abd3b29d9f44866fd79795dbca4, type: 2}
       propertyPath: m_Enabled
@@ -63890,8 +63890,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 40, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 100, z: 1}
+  m_Center: {x: 0, y: -50, z: 0}
 --- !u!1001 &1626920803
 Prefab:
   m_ObjectHideFlags: 0
@@ -79023,6 +79023,10 @@ Prefab:
     - target: {fileID: 400126, guid: 459aeb780b3c43748b5a2bb13e1809c8, type: 2}
       propertyPath: m_LocalScale.z
       value: 4.4205
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: 459aeb780b3c43748b5a2bb13e1809c8, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459aeb780b3c43748b5a2bb13e1809c8, type: 2}

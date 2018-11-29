@@ -5,8 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Snowtrees.unity
+  - enabled: 1
+    path: Assets/Scenes/Fishbowl.unity
     guid: f7d83b5b4fcd343b589089a81ecd2d70
   - enabled: 0
     path: Assets/test.unity
