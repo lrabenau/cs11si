@@ -15,9 +15,12 @@ public class ControllerController : MonoBehaviour {
         // #else if bUNITY_ANDROID
         //if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger) || Input.GetKeyDown(KeyCode.Space)) {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.up, out hit, 100.0f))
+           
+            if (Physics.Raycast(transform.position, transform.up, out hit, 10.0f))
             {
-                if (hit.distance <= 100f)
+                Debug.Log("HIT");
+                Debug.Log(hit.collider.gameObject.tag);
+                if (hit.distance <= 5f)
                 {
                     if (hit.collider.gameObject.tag == "spaceScene"){ 
                         // if (tag == x)
