@@ -16,6 +16,7 @@ public class StarAppear : MonoBehaviour {
 		if (transform.childCount == 0)
         {
             star.SetActive(true);
+            Inventory.inventory.Add("STAR");
         }
 	}
 }
