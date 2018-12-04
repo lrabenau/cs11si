@@ -5,7 +5,7 @@ using UnityEngine;
 public class CircularMovement : MonoBehaviour
 {
     public Vector3 Velocity = new Vector3(0, 0, 0);
-    public Vector3 CenterStart = new Vector3(0, 0, 0);
+    //% public Vector3 CenterStart = new Vector3(0, 0, 0);
 
     [Range(0, 100)] 
     public float RotateSpeed = 1f;
@@ -22,7 +22,9 @@ public class CircularMovement : MonoBehaviour
     private void Start()
     {
 //%  _centre = transform.position;
-        _centre = CenterStart;
+        _centre = new Vector3(transform.position.x,
+                           transform.position.y,
+                           transform.position.z);
     }
 
     private void Update()
