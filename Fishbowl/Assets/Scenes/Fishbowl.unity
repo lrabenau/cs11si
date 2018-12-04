@@ -3205,11 +3205,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b3f4cf731b0594edb8eb0552ea03e8e5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 491237df9bb5b4d6e842d9624fdfb1f8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6658,15 +6658,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400056, guid: dd2096ea94845af4fb08170241889f43, type: 3}
       propertyPath: m_LocalScale.x
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400056, guid: dd2096ea94845af4fb08170241889f43, type: 3}
       propertyPath: m_LocalScale.y
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400056, guid: dd2096ea94845af4fb08170241889f43, type: 3}
       propertyPath: m_LocalScale.z
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 11100000, guid: dd2096ea94845af4fb08170241889f43, type: 3}
       propertyPath: m_Animation
@@ -9407,7 +9407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: {x: 0, y: 0, z: 0}
-  RotateSpeed: 1
+  RotateSpeed: 0.5
   RotateRadiusX: 100
   RotateRadiusZ: 100
   Clockwise: 1
