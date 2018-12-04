@@ -11,12 +11,10 @@ public class GameManager : MonoBehaviour {
 	void Start () {
         Instance = this;
         DontDestroyOnLoad(this.gameObject);
-
     }
 
     public void LoadScene(string scenename)
     {
-
         SceneManager.LoadScene(scenename);
     }
 

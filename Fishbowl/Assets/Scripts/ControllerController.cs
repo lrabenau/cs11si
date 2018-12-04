@@ -36,7 +36,7 @@ public class ControllerController : MonoBehaviour {
                     }
                     if (hit.collider.gameObject.tag == "fishbowlScene")
                     {
-
+                        Debug.Log("hit");
                         GameManager.Instance.LoadScene("Scenes/Fishbowl");
 
                     }

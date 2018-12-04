@@ -12,6 +12,7 @@ public class BulletControl : MonoBehaviour {
     // Use this for initialization
     void Start () {
         audioSource = transform.parent.GetComponent<AudioSource>();
+        Debug.Log(Inventory.inventory);
     }
 	
 	// Update is called once per frame
@@ -24,6 +25,7 @@ public class BulletControl : MonoBehaviour {
 
         Destroy(other.gameObject);
         StartCoroutine(PlayExplosion());
+
     }
 
     private IEnumerator PlayExplosion()
