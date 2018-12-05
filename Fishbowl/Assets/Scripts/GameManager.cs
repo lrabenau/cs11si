@@ -11,12 +11,10 @@ public class GameManager : MonoBehaviour {
 	void Start () {
         Instance = this;
         DontDestroyOnLoad(this.gameObject);
-
     }
 
     public void LoadScene(string scenename)
     {
-
         SceneManager.LoadScene(scenename);
     }
 
@@ -24,10 +22,10 @@ public class GameManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Inventory.inventory.Count >= 2)
-        {
-            SceneManager.LoadScreen("Scenes/Fishbowl")
-        }
+        // if (Inventory.inventory.Count >= 2)
+        // {
+        //     SceneManager.LoadScreen("Scenes/Fishbowl")
+        // }
         //RaycastHit hit; 
         //if (Physics.Raycast(transform.position, -Vector3.up, out hit, 100.0f)) {
         //    if (hit.distance <= 10f) {
