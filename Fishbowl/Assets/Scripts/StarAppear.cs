@@ -26,7 +26,7 @@ public class StarAppear : MonoBehaviour {
   //       float fracJourney = distCovered / journeyLength;
   //       star.transform.position = Vector3.Lerp(startPosition, cameraPosition, fracJourney);
            
-		if (transform.childCount == 32 && firstTime)
+		if (transform.childCount == 0 && firstTime)
         {
         	startTime = Time.time;
 			star.SetActive(true);

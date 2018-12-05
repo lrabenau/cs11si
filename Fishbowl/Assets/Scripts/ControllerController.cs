@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ControllerController : MonoBehaviour {
-
-	// Use this for initialization
+    private bool hasVisitedSpace;
+    private bool hasVisitedBird;
+    // Use this for initialization
 	void Start () {
-		
+		hasVisitedSpace = false;
+        hasVisitedBird = false;
 	}
 	
 	// Update is called once per frame
@@ -22,15 +24,17 @@ public class ControllerController : MonoBehaviour {
                 Debug.Log(hit.collider.gameObject.tag);
                 if (hit.distance <= 5f)
                 {
-                    if (hit.collider.gameObject.tag == "spaceScene"){ 
+                    if (hit.collider.gameObject.tag == "spaceScene" && !hasVisitedSpace){ 
                         // if (tag == x)
                         // sceneName=y
+                        hasVisitedSpace = true;
                         GameManager.Instance.LoadScene("Scenes/space");
 
                     }
-                    if (hit.collider.gameObject.tag == "birdScene")
+                    if (hit.collider.gameObject.tag == "birdScene" && !hasVisitedBird)
                     {
-
+                        Inventory.inventory.Add("BIRD");
+                        hasVisitedBird = true;
                         GameManager.Instance.LoadScene("Scenes/Snow_birds");
 
                     }

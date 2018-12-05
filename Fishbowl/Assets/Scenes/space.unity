@@ -3682,11 +3682,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400010, guid: 6f7efb4e67f645b458754610748b27b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.184
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 6f7efb4e67f645b458754610748b27b5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.073
+      value: -0.134
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 6f7efb4e67f645b458754610748b27b5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4250,7 +4250,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.305
   m_Pitch: 1
   Loop: 0
   Mute: 0
